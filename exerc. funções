@@ -1,0 +1,97 @@
+/* interpretação:
+1- a) 10 e 50.
+b) Não acontece nada.
+
+2- a)Retorna true se o usuário escrever a palavra "cenoura", não importanto a forma ou a frase. 
+b) Irá retornar TRUE em todas as opções.
+*/
+
+/*Código:
+//1-a) A função não deve receber nenhum parâmetro e deve imprimir uma
+mensagem falando algumas informações sobre você, como:
+"Eu sou Caio, tenho 23 anos, moro em São Paulo e sou estudante."
+Troque o nome, idade, cidade e se é estudante ou não por informações
+sobre você. Lembrando que a função não possui entradas, apenas
+imprime essa mensagem.
+b) Agora escreva uma função que receba 4 parâmetros que
+correspondem às informações de uma pessoa: o nome ( string ), a
+idade ( number ), a cidade ( string ) e uma profissão ( string ). Ela deve
+retornar uma string que unifique todas as informações da pessoa em
+uma só mensagem com o template:
+Eu sou [NOME], tenho [IDADE] anos, moro em [ENDEREÇO] e sou [PROFISSÃO].
+*/
+function fatosSobreMim(){
+    console.log("Eu sou a Belly, tenho 19 anos, moro em São Leopoldo e sou estudante.")
+}
+fatosSobreMim();
+
+function pessoa(nome, idade, cidade, profissão){
+return 'Eu sou' +nome+ 'tenho' +idade+ 'anos, moro em' +cidade+ 'e sou' +profissão;
+}
+console.log(pessoa('Paula', 25, 'Erechim', 'auxiliar'));
+
+/*2-a) Escreva uma função que receba 2 números como parâmetros, e,
+dentro da função, faça a soma das duas entradas e retorne o resultado.
+Invoque a função e imprima no console o resultado.*/
+function doisNumeros(numero1, numero2){
+    const soma = numero1 + numero2
+    return soma;
+}
+doisNumeros(5, 9);
+console.log(doisNumeros(5,9));
+ /*b) b) Faça uma função que recebe 2 números e retorne um booleano que
+informa se o primeiro número é maior ou igual ao segundo*/
+function booleano(number1, number2){
+    const maiorQue = number1>=number2; 
+    number1 = true;
+return maiorQue;
+}
+console.log(booleano(9, 10));
+
+/*c) Escreva uma função que receba um número e devolva um booleano
+indicando se ele é par ou não*/
+function numeroPar(par){
+const inparPar = par % 2;
+return inparPar;
+}
+console.log( numeroPar(8));
+
+/*d) Faça uma função que recebe uma mensagem ( string ) como
+parâmetro e imprima o tamanho dessa mensagem, juntamente com
+uma versão dela em letras maiúsculas.*/
+function mensagem (texto){
+    const frase = "Bom dia"
+    return frase.toUpperCase()
+    return frase.length();
+    
+}
+console.log(mensagem());
+
+/* Crie uma função para cada uma das operações básicas (soma,
+subtração, multiplicação e divisão). Em seguida, peça para o usuário
+inserir dois números e chame essas 4 funções com esses valores
+enviados pelo usuário sendo o argumento. Por fim, mostre no console o
+resultado das operações:*/
+function soma(mais){
+    return mais;
+}
+const somar = prompt ("Digite dois número:");
+console.log(somar);
+
+function subtração(menos){
+return menos;
+}
+const menos = prompt ("Digite dois números");
+console.log(menos);
+
+function multiplicação(vezes){
+    return vezes;
+
+}
+const vezes = prompt ("Digite dois números:");
+console.log(vezes);
+
+function divisão(dividir){
+    return dividir;
+}
+const dividir = prompt("Digite dois número:");
